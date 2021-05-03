@@ -30,4 +30,41 @@ def estCondicional02():
  #Datos de salida
  print("El monto a pagar es:", montoP)
 
-estCondicional02()
+def bonoDocente():
+  #definir Variables
+  bonoObtenido=0.0
+  #Datos de Endrada
+  salarioMinimo=float(input("Ingrese el salario minimo:"))
+  puntuacionObtenida=float(input("Ingrese la puntuación que ha obtenido:"))
+  #Proceso
+  if puntuacionObtenida<=100 and puntuacionObtenida>=0:
+    bonoObtenido=salarioMinimo
+  elif puntuacionObtenida >=101 and puntuacionObtenida<=150:
+    bonoObtenido=salarioMinimo*2
+  elif puntuacionObtenida>150:
+    bonoObtenido=salarioMinimo*3  
+  #Datos de salida
+  print("El docente obtendra un bono de:", bonoObtenido )
+def paquetes():
+  #Definir Variables
+  resultPaquete=""
+  #Datos de entrada
+  montoRvDic=float(input("Ingrese el monto que recibe en diciembre:"))
+  #Proceso
+  if montoRvDic>=50000:
+    resultPaquete="Paquete A"
+  elif montoRvDic>=20000 and montoRvDic<50000:
+    resultPaquete="Paquete B"
+  elif montoRvDic>=10000 and montoRvDic<20000:
+    resultPaquete="Paquete C"
+  else:
+    resultPaquete="Paquete D"
+  #Datos de salida
+  print("La persona comprara el: ", resultPaquete)  
+
+#estCondicional02()
+#estCondicional01()
+#bonoDocente()
+paquetes()
+
+#estCondicional01()
