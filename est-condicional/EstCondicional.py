@@ -45,6 +45,7 @@ def bonoDocente():
     bonoObtenido=salarioMinimo*3  
   #Datos de salida
   print("El docente obtendra un bono de:", bonoObtenido )
+
 def paquetes():
   #Definir Variables
   resultPaquete=""
@@ -66,5 +67,10 @@ def paquetes():
 #estCondicional01()
 #bonoDocente()
 paquetes()
+
+#estCondicional02()
+#estCondicional01()
+bonoDocente()
+
 
 #estCondicional01()
