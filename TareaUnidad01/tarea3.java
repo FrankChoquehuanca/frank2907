@@ -1,5 +1,5 @@
 import java.util.Scanner;
- class tarea3 {
+    class tarea3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int presupuesto;

@@ -1,6 +1,7 @@
+package TareaUnidad01;
 import java.util.Scanner;
 class tarea10 {
-   public static void main(String[] args) {
+   public static void main (String[] args) {
     Scanner in = new Scanner(System.in);
     int costo_del_pasaje, numero_de_alumnos;
     System.out.print("Ingresa el valor de numero de alumnos: ");

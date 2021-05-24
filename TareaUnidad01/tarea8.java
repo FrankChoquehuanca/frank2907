@@ -1,6 +1,12 @@
+package TareaUnidad01;
+
 import java.util.Scanner;
+
+/**
+ * TareaUnidad01
+ */
 class tarea8 {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
       Scanner in = new Scanner(System.in);
       double costo_por_km, presupuesto;
       System.out.print("Ingresa el valor de costo por km: ");
