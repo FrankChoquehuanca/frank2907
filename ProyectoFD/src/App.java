@@ -4,6 +4,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         SubProgramas objSP=new SubProgramas();
-        objSP.calcularFuncionExponecial();
+        //objSP.calcularFuncionExponecial();
+        //System.out.println("Factorial: "+objSP.factorialLong(22));
+        System.out.println("Factorial: "+objSP.factorialBig(1000)); 
     }
 }

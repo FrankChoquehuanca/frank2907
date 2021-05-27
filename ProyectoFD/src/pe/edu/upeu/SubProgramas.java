@@ -1,12 +1,14 @@
 package pe.edu.upeu;
 
+import java.math.BigInteger;
+
 import pe.edu.upeu.util.TecladoRead;
 
 public class SubProgramas {
      //Scanner teclado = new Scanner(System.in)
     TecladoRead teclado=new TecladoRead();
 
-    public static int factorial(int numero) {
+    public  int factorial(int numero) {
         int factorialResult=1;
         if(numero>1){
             for (int i = 2; i <= numero; i++) {
@@ -15,11 +17,19 @@ public class SubProgramas {
         }
         return factorialResult;        
     }
-
+    public long factorialLong(int numero) {
+        long factorialResult=1;
+        if(numero>1){
+            for (int i = 2; i <= numero; i++) {
+                factorialResult*=i;
+            }
+        }
+        return factorialResult;        
+    }    
     public double potencia(int x, int i) {
         return Math.pow(x, i);
     }
-        
+    
 
     public void calcularFuncionExponecial() {
         //Declarar Variables
@@ -40,5 +50,17 @@ public class SubProgramas {
         //Datos de salida
         System.out.println("La funcion exponencial de e^x es:"+fx);
     }
+     //Calcula el factorial de cualquier numero
+     public BigInteger factorialBig(int numero) {
+        BigInteger factorialResult = new BigInteger("1");
+        ;
+        if(numero>1){
+            for (int i = 2; i <= numero; i++) {                
+                factorialResult=factorialResult.multiply(new BigInteger(String.valueOf(i)));
+            }
+        }
+        return factorialResult;        
+    }    
+
 
 }
