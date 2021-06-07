@@ -131,7 +131,6 @@ func mainPruebaFibonaci(numero int64){
     fmt.Println("-----Factorial recursivo-----")
     go fibonacciRecur(numero)
   }() 
-   
   go func() {
     defer wg.Done()
     fmt.Println("-----Factorial recursivo-----")
