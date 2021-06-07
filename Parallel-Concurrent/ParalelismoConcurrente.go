@@ -122,18 +122,37 @@ func mainPruebaFibonaci(numero int64){
 	//nproc --all
 	//lscpu | grep 'CPU(s)'
   ti := time.Now()
- /* runtime.GOMAXPROCS(1)
+  runtime.GOMAXPROCS(4)
   var wg sync.WaitGroup
-  wg.Add(1)
+  wg.Add(4)
   go func() {
     defer wg.Done()
     fmt.Println("-----Factorial recursivo-----")
     go fibonacciRecur(numero)
+  }() 
+   
+  go func() {
+    defer wg.Done()
+    fmt.Println("-----Factorial recursivo-----")
+    go FactorialBigRecur(numero)
+  }()
+
+  go func() {
+    defer wg.Done()
+    fmt.Println("-----Factorial recursivo-----")
+    go FactorialBigRecur(numero+1)
+  }()
+
+  go func() {
+    defer wg.Done()
+    fmt.Println("-----Factorial recursivo-----")
+    go FactorialBigRecur(numero+1)
   }()  
-  wg.Wait()  */
-	for i := int64(1); i <= numero; i++ {
-	 fibonacciRecur(numero) //go fibonacciRecur(numero)
-	}
+  wg.Wait()  
+	/*for i := int64(1); i <= numero; i++ {
+	go fibonacciRecur(numero) //go fibonacciRecur(numero)
+  FactorialBigRecur(numero)
+	}*/
   tf := time.Now()
   fmt.Printf("Total tiempo %s \n",  tf.Sub(ti))     
 }
