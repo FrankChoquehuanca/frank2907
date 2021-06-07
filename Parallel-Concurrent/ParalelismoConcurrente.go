@@ -122,6 +122,7 @@ func mainPruebaFibonaci(numero int64){
 	//nproc --all
 	//lscpu | grep 'CPU(s)'
   ti := time.Now()
+	//free -h
   runtime.GOMAXPROCS(4)
   var wg sync.WaitGroup
   wg.Add(4)
