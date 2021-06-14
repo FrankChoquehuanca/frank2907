@@ -13,8 +13,14 @@ public class App {
         int numero=tr.read(0, "Indroducir un numero:");
         /*System.out.println("Factorial: "+objSP.factorialLong(numero));
         System.out.println("Factorial: "+objSP.factorialBig(numero));*/ 
-   
+        long ti=System.currentTimeMillis();
         System.out.println("Fibonaci iterativo: "+objER.fibonaci(numero)); 
+        long tf=System.currentTimeMillis();
+        System.out.println("Tiempo iterativo:"+ (tf-ti));
+
+        ti=System.currentTimeMillis();
         System.out.println("Fibonaci recursivo: "+objER.fibonaciRecur(numero)); 
+        tf=System.currentTimeMillis();
+        System.out.println("Tiempo iterativo:"+ (tf-ti));
     }
 }
