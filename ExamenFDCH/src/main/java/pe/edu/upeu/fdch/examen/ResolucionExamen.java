@@ -7,33 +7,33 @@ import pe.edu.upeu.fdch.utils.LeerTeclado;
 public class ResolucionExamen {
     LeerTeclado teclado=new LeerTeclado();
  public  void Impuestoxvehiculo() {
-    int categoria , cant1=0,imp1=12,imp2=8,imp3=5,impt1=0,impt2=0,impt3=0;
+    int categoria , cant1=0,n1=12,n2=8,n3=5,ni1=0,ni2=0,ni3=0;
         do {
             categoria=teclado.leer(0,"¿Que categoria es su auto: 1-2-3 ?");
         switch (categoria) {
             case 1:
                 cant1=teclado.leer(0,"Cuantos vehiculos tiene de categoria 1");
                 for (int j = 0; j < cant1; j++) {
-                System.out.println("Usted debe pagar: "+imp1+"% de su valor");
-                impt1=impt1+imp1;
+                System.out.println("Usted debe pagar: "+n1+"% de su valor");
+                ni1=ni1+n1;
                 }
-                System.out.println("Por toda la categoria se pagara"+impt1+"% de su valor");
+                System.out.println("Por toda la categoria se pagara"+ni1+"% de su valor");
                 break;
             case 2:
                 cant1=teclado.leer(0,"Cuantos vehiculos tiene de categoria 2");
                 for (int j = 0; j < cant1; j++) {
-                System.out.println("Usted debe pagar: "+imp2+"% de su valor");
-                impt2=impt2+imp2;
+                System.out.println("Usted debe pagar: "+n2+"% de su valor");
+                ni2=ni2+n2;
                }
-               System.out.println("Por toda la categoria se pagara"+impt2+"% de su valor");
+               System.out.println("Por toda la categoria se pagara"+ni2+"% de su valor");
                 break;
             case 3:
                 cant1=teclado.leer(0,"Cuantos vehiculos tiene de categoria 3");
                 for (int j = 0; j < cant1; j++) {
-                System.out.println("Usted debe pagar: "+imp3+"% de su valor");
-                impt3=impt3+imp3;
+                System.out.println("Usted debe pagar: "+n3+"% de su valor");
+                ni3=ni3+n3;
                 }
-                System.out.println("Por toda la categoria se pagara"+impt3+"% de su valor");
+                System.out.println("Por toda la categoria se pagara"+ni3+"% de su valor");
                 break;
            }
       }
@@ -50,7 +50,7 @@ public class ResolucionExamen {
             System.out.println(nnn+"x"+s+"="+(s*nnn));
         }
         nnn=nnn+1;
-        System.out.println("..............................");
+        System.out.println("...........................");
         }
     }
 

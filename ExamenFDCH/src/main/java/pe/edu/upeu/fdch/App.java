@@ -14,10 +14,9 @@ public class App
     {
         System.out.println( "Buenos Dias" );
         ResolucionExamen obsjn=new ResolucionExamen();
-        //LeerTeclado objn=new LeerTeclado();
         
-        //obsjn.Impuestoxvehiculo();
-        obsjn.TabladeMultiplicar();    
+        obsjn.Impuestoxvehiculo();
+        //obsjn.TabladeMultiplicar();    
         //obsjn.NumeroPerfecto(new Scanner(System.in));
         //obsjn.PotenciaRecursiva();
     
