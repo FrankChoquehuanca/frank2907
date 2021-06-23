@@ -1,3 +1,5 @@
+package TareaUnidad01;
+
 import java.util.Scanner;
 class tarea2 {
   public static void main(String[] args) {
