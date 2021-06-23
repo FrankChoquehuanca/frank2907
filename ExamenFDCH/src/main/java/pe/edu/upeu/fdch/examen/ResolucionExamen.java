@@ -50,7 +50,7 @@ public class ResolucionExamen {
             System.out.println(nnn+"x"+s+"="+(s*nnn));
         }
         nnn=nnn+1;
-        System.out.println("_________________________");
+        System.out.println("..............................");
         }
     }
 
@@ -76,9 +76,9 @@ public class ResolucionExamen {
     
      //5.
 
-    public void ExponenteRecursivo() {
+    public void PotenciaRecursiva() {
      int base,exponente;
-     base=teclado.leer(0,"Ingrese la base ");
+     base=teclado.leer(0,"Ingrese el munero de la base ");
      exponente=teclado.leer(0,"Ingrese el numero del exponente ");
      System.out.println(base+"^"+exponente+"="+recursividad(base,exponente));
         }

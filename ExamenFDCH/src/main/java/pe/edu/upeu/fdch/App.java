@@ -17,9 +17,9 @@ public class App
         //LeerTeclado objn=new LeerTeclado();
         
         //obsjn.Impuestoxvehiculo();
-        //obsjn.TabladeMultiplicar();    
+        obsjn.TabladeMultiplicar();    
         //obsjn.NumeroPerfecto(new Scanner(System.in));
-        obsjn.ExponenteRecursivo();
+        //obsjn.PotenciaRecursiva();
     
 
     }
