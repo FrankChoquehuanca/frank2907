@@ -14,8 +14,6 @@ public class EjemploVectores {
         //vectorX[2]=5;
         System.out.println("Imprimiendo valores del vector");
         System.out.println(vectorX[0]);//imprimiendo valor o elemento del vector vectorX[0]
-        //Asignando valores directos a un vector
-        int[] vA={12,3,4,5,6,7,8,9,10};
         int[] vB=new int[]{12,2,3,4,5,6,7,8,9,10, 45, 16, 32};
         System.out.println("Tamanho/longitud del vector vA="+vB.length);
 
@@ -28,10 +26,9 @@ public class EjemploVectores {
         }
         public static int[] rellenarVector(int tv) {
             int[] vector=new int[tv];
-            Scanner cs=new Scanner(System.in);
             for (int i = 0; i < vector.length; i++) {
                 System.out.print("Ingrese el valor del indice "+i+":");
-                vector[i]=cs.nextInt();
+                vector[i]=new Scanner(System.in).nextInt();
                 System.out.println("");
             }
             mostrarValores(vector);
