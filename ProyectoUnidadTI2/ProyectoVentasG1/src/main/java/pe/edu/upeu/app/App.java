@@ -1,6 +1,7 @@
 package pe.edu.upeu.app;
 
 import pe.edu.upeu.dao.CategoriaDAO;
+import pe.edu.upeu.dao.ColorDAO;
 import pe.edu.upeu.dao.ProductoDAO;
 import pe.edu.upeu.dao.UsuarioDAO;
 import pe.edu.upeu.dao.VentaDAO;
@@ -26,12 +27,15 @@ public class App{
         "\n4=Registrar Venta"+
         "\n41=Reporte Ventas por fechas"+
         "\n5=Editar Categoria"+
+        "\n6=Registrar color"+
+        "\n61=Editar color"+
         "\n0=Salir del sistema"
         ;     
         CategoriaDAO daoCat;   
         UsuarioDAO daoUso;
         ProductoDAO proDao;
         VentaDAO ventDao;
+        ColorDAO colTO;
         TecladoRead tre=new TecladoRead();
         int opciones=tre.read(0, mensaje);         
         do {
@@ -43,6 +47,8 @@ public class App{
                 case 4: ventDao=new VentaDAO(); ventDao.registroVentaGeneral(); break;   
                 case 41: ventDao=new VentaDAO(); ventDao.reportarVentasRangoFecha(); break; 
                 case 5: daoCat=new CategoriaDAO(); daoCat.editar(); break;  
+                case 6: colTO=new ColorDAO(); colTO.registrarColor(); break;
+                case 61: colTO=new ColorDAO(); colTO.editarcolor(); break;  
                 default:System.out.println("Opcion no existe");   break;
             }       
                  
@@ -75,13 +81,14 @@ public class App{
 
 
     public static void main( String[] args ){
-        //menuMain();
+       menuMain();
         AnsiConsole.systemInstall();        
-        //System.out.println( color.bgBrightGreen().fg(RED).a("Hello").fg(BLACK).a(" World").reset() );        
-        System.out.println(color.render("Resumen: @|red Neto Total:S/. |@ @|green "+(Math.round(40.54411*100.0)/100.0)+
+       /*System.out.println( color.bgBrightGreen().fg(RED).a("Hello").fg(BLACK).a(" World").reset() );        
+        /*System.out.println(color.render("Resumen: @|red Neto Total:S/. |@ @|green "+(Math.round(40.54411*100.0)/100.0)+
         "|@ | @|red IGV: S/.|@ @|green "+(Math.round(15.3333*100.0)/100.0)+"|@  | @|red Monto total: S/. |@ @|green "+
-        (Math.round(53.4100*100.0)/100.0)+"|@"));       
-        validAccessSystem();
-        //new MainGUI();
+        (Math.round(53.4100*100.0)/100.0)+"|@"));*/       
+        //validAccessSystem();
+        new MainGUI();
+
     }
 }
