@@ -107,7 +107,7 @@ public class App {
         //AnsiConsole.systemInstall();
         //System.out.println(colorX.render("@|red Hello|@ gggg @|green World|@") );
         validarAcceso();       
-        //menuMain(); 
+        menuMain(); 
         //new MainGUI();
     }
 }

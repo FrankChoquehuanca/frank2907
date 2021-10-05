@@ -59,7 +59,7 @@ public class VentaDao extends AppCrud{
         ut.pintarLine('H', 20);        
         editarRegistro(lar, 0, vent.getIdVenta(), vent);
 
-    }
+    } 
 
     public VentaTO crearVenta() {
         System.out.println("*****************Registro de Venta*********************");
