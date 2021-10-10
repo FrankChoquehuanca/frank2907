@@ -1,5 +1,4 @@
 package TareaUnidad01CII;
-
 import java.util.Scanner;
 class MayorMenorIgual{
 static Scanner teclado=new Scanner(System.in);
@@ -14,23 +13,18 @@ variable2=teclado.nextInt();
 //proceso jajajajjja
 if (variable1>variable2) {
     System.out.println("el numero mayor es:"+variable1 );
-}
- else  {
+}else{
     System.out.println("el numero mayor es:"+variable2 );
  }
-
  if (variable1<variable2) {
     System.out.println("el numero menor es:"+variable1 );
-}
- else  {
+}else{
     System.out.println("el numero menor es:"+variable2 );
  }
  if(variable1 == variable2){
    System.out.println("Los numeros son iguales");
 }else{
-   System.out.println("Los numeros NO son iguales");
+   System.out.println("Los numeros NO son iguales");}
 }
-
- }
 public static void main(String[] arg){ejercicio1();}
 }
